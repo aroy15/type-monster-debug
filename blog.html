@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Typing Monster</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Blog</h1>    
+    </header>
+    <div class="box-container">
+      <div class="divider-container">
+        <div class="line"></div>
+        <h1 class="title2">Blog</h1>
+        <div class="line"></div>
+      </div>
+      <div class="blogs">
+        <div class="blog-item card">
+          <h3>Difference Between Local Storage and Session Storage</h3>
+          <p>Local storage makes it possible to store values in the browser which can survive the browser session.</p>
+
+          <p>Session storage is available inside the same browser window for as long as the window is open. When the browser window is closed, the session storage associated with that window is deleted. Multiple windows from the same origin (URL) cannot see each others session storage. Popup windows opened from the same window can see session storage, and so can iframes inside the same window.</p>
+
+          <p>Local storage is available in the browser to all windows with the same origin (domain). Data stored in the local storage is also available after the window has been closed. The next time a window is opened and loads the page from the same origin, the page can access the stored values there again.</p>
+
+          <p>The properties set in the HTML5 local storage can only be read by pages from the same domain as the page that set the properties.</p>
+
+          <p>HTML web storage provides two objects for storing data on the client:</p>
+
+          <p>window.localStorage: stores data with no expiration date</p>
+
+          <p>window.sessionStorage : stores data for one session (data is lost when the browser tab is closed).</p>
+
+          <p>Note that localStorage and sessionStorage accomplish the exact same thing and have the same API.</p>
+        </div>
+        <div class="blog-item card">
+          <h3>Difference Between Global scope and Function scope</h3>
+          <h4>The Global scope</h4>
+          <p>A variable exists inside or outside a block. If a variable is declared outside all functions or curly braces ({}), it exists in the global scope. The global variables can be accessed by any line of code in the program, including inside blocks.</p>
+
+          <h4>The Block scope</h4>
+          <p>So far, we’ve seen variables defined with the var keyword. Var can declare a variable either in the global or local scope. The variables that are declared within the block scope are comparable to local ones. They are available within the block that they are defined.</p>
+          <p>The main difference between the local scope and block scope is that the block statements (e.g. if conditions or for loops), don't create a new scope. So the var keyword will not have an effect, because the variables are still in the same scope.</p>
+
+          <h4>Sum up differences</h4>
+          <p>-> Global variables last as long as the application is running.<br>
+            -> Block statements don't create a new scope and the block scope does not apply to var keyword.<br>
+            -> Const and Let can define scope to block statements.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
